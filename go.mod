@@ -1,4 +1,4 @@
-module stock-stream
+module stock_stream
 
 go 1.23
 
