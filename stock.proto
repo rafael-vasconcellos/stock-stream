@@ -16,3 +16,19 @@ message StockResponse {
     string symbol = 1;
     float price = 2;
 }
+
+
+
+service UserService { 
+    rpc AddUser(AddUserRequest) returns (GetUserResponse);
+}
+
+message AddUserRequest { 
+    string username = 1;
+    string email = 2;
+}
+
+message GetUserResponse { 
+    string username = 1;
+    string email = 2;
+}
